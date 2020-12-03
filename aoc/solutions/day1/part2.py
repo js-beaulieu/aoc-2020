@@ -4,7 +4,7 @@ from aoc.solutions.day1.common import product_of_combi_with_total
 
 
 def run(numbers: List[int]) -> int:
-    return product_of_combi_with_total(numbers, 2)
+    return product_of_combi_with_total(numbers, 3)
 
 
 if __name__ == "__main__":
@@ -13,5 +13,5 @@ if __name__ == "__main__":
     with open(Path(__file__).parent / "input.txt") as file:
         result = run([int(x) for x in file.read().splitlines()])
 
-        # correct result is: 1010884
+        # correct result is: ...
         print(result)
